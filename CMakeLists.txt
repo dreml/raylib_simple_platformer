@@ -21,6 +21,7 @@ set(SOURCES
     src/game/Game.cpp
 		src/game/AudioManager.cpp
 		src/game/Player.cpp
+		src/components/AnimationComponent.cpp
 )
 
 # Создаем исполняемый файл
