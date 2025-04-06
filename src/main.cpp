@@ -7,6 +7,8 @@ int main(void) {
 	float screenWidth = sp::constants::WINDOW_WIDTH;
 	float screenHeight = sp::constants::WINDOW_HEIGHT;
 
+	SetConfigFlags(FLAG_MSAA_4X_HINT);
+
 	InitWindow(screenWidth, screenHeight, "Simple Platformer");
 	InitAudioDevice();
 
@@ -19,7 +21,7 @@ int main(void) {
 
 		BeginDrawing();
 
-		ClearBackground(WHITE);
+		ClearBackground(RAYWHITE);
 
 		game.draw();
 

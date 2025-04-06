@@ -20,6 +20,7 @@ set(SOURCES
     src/main.cpp
     src/game/game.cpp
     src/game/audio_manager.cpp
+		src/game/player.cpp
 )
 
 # Создаем исполняемый файл
