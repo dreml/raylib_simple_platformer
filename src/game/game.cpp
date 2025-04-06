@@ -1,9 +1,9 @@
-#include "common/constants.hpp"
-#include "common/types.hpp"
-#include "game/player.hpp"
-#include "raylib.h"
+#include "common/Constants.hpp"
+#include "common/Types.hpp"
+#include "game/Player.hpp"
+#include <raylib.h>
 #include <memory>
-#include "game/game.hpp"
+#include "game/Game.hpp"
 
 using namespace sp;
 

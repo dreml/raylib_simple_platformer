@@ -1,7 +1,7 @@
-#include "common/types.hpp"
-#include "raylib.h"
-#include "common/constants.hpp"
-#include "game/game.hpp"
+#include <raylib.h>
+#include "common/Types.hpp"
+#include "common/Constants.hpp"
+#include "game/Game.hpp"
 
 int main(void) {
 	float screenWidth = sp::constants::WINDOW_WIDTH;

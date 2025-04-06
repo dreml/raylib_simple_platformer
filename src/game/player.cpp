@@ -1,6 +1,5 @@
-#include <process.h>
 #include <raylib.h>
-#include "game/player.hpp"
+#include "game/Player.hpp"
 
 using namespace sp;
 

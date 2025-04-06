@@ -1,7 +1,7 @@
 #pragma once
 
-#include "common/types.hpp"
-#include "game/player.hpp"
+#include "common/Types.hpp"
+#include "game/Player.hpp"
 #include <memory>
 
 namespace sp {

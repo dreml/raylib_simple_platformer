@@ -18,9 +18,9 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 # Явно указываем все исходные файлы
 set(SOURCES
     src/main.cpp
-    src/game/game.cpp
-    src/game/audio_manager.cpp
-		src/game/player.cpp
+    src/game/Game.cpp
+		src/game/AudioManager.cpp
+		src/game/Player.cpp
 )
 
 # Создаем исполняемый файл
