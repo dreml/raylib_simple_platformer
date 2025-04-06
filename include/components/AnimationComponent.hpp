@@ -1,9 +1,13 @@
 #pragma once
 
+#include "components/Component.hpp"
+#include "game/GameObject.hpp"
 #include <raylib.h>
+
 namespace sp {
 
-class AnimationComponent {
+class AnimationComponent : public Component {
+private:
   Texture2D texture;
 
   int framesSpeed;
@@ -17,11 +21,11 @@ class AnimationComponent {
   Vector2 spriteSize;
 
 public:
-  AnimationComponent(Texture2D t, int framesSpeed, int rowsCount,
-                     int columnsCount);
+  AnimationComponent(GameObject &owner, Texture2D t, int framesSpeed,
+                     int rowsCount, int columnsCount);
 
-  void update(float dt);
-  void draw(Vector2 position) const;
+  void update(float dt) override;
+  void draw() const override;
 };
 
 } // namespace sp

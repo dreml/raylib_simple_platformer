@@ -7,6 +7,7 @@
 namespace sp {
 
 class Game {
+private:
   ScreenDimensions screenDimensions;
   std::unique_ptr<Player> player;
 

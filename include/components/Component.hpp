@@ -1,16 +1,16 @@
 #pragma once
 
-#include <raylib.h>
+#include "game/GameObject.hpp"
 
 namespace sp {
 
-class GameObject {
+class Component {
 protected:
-  Vector2 position;
+  GameObject &owner;
+
+  Component(GameObject &owner) : owner(owner) {};
 
 public:
-  Vector2 getPosition() const { return position; };
-
   virtual void update(float dt) = 0;
   virtual void draw() const = 0;
 };

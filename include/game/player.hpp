@@ -7,9 +7,9 @@
 namespace sp {
 
 class Player : public GameObject {
+private:
   AnimationComponent animationComponent;
 
-  Vector2 position;
   float speed;
 
 public:
